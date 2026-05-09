@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="gu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ગુજરાત વિદ્યાસેતુ | ધોરણ 7 અને 10 ગુજરાતી માધ્યમ</title>
+    <meta
+      name="description"
+      content="ગુજરાતી માધ્યમના ધોરણ 7 અને ધોરણ 10ના વિદ્યાર્થીઓ માટે પાઠ, વિડિયો, પ્રેક્ટિસ, અભ્યાસ યોજના અને પ્રગતિ નોંધ."
+    />
+    <link rel="preconnect" href="https://www.youtube.com" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="ગુજરાત વિદ્યાસેતુ મુખ્ય પાનું">
+        <span class="brand-mark">વિ</span>
+        <span>
+          <strong>ગુજરાત વિદ્યાસેતુ</strong>
+          <small>ધોરણ 7 અને 10 ગુજરાતી માધ્યમ</small>
+        </span>
+      </a>
+      <nav class="nav" aria-label="મુખ્ય મેનુ">
+        <a href="#learn">અભ્યાસક્રમ</a>
+        <a href="#videos">વિડિયો</a>
+        <a href="#plan">યોજના</a>
+        <a href="#practice">પ્રેક્ટિસ</a>
+      </nav>
+      <button class="ghost-button" id="resetProgress" type="button">ફરી શરૂ કરો</button>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">ગુજરાતી માધ્યમ માટે નિ:શુલ્ક અભ્યાસ સાથી</p>
+          <h1>સરકારી શાળાના વિદ્યાર્થીઓ માટે સંપૂર્ણ માર્ગદર્શનવાળો અભ્યાસ અનુભવ.</h1>
+          <p class="lead">
+            ધોરણ 7 અને ધોરણ 10ના ગુજરાત બોર્ડના પાઠોને સરળ રીતે વાંચો,
+            સમજાવો, પ્રેક્ટિસ કરો, અને જરૂર પડે ત્યારે વિડિયો સહાય લો.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#learn">અભ્યાસ શરૂ કરો</a>
+            <a class="secondary-button" href="#videos">વિડિયો ક્લાસ ખોલો</a>
+          </div>
+          <div class="trust-row" aria-label="વેબસાઇટની ખાસિયતો">
+            <span>2 ધોરણ</span>
+            <span>ગુજરાતી પ્રથમ</span>
+            <span>પ્રગતિ સાચવાય છે</span>
+          </div>
+        </div>
+        <div class="hero-board" aria-label="અભ્યાસ ડેશબોર્ડ ઝલક">
+          <div class="board-head">
+            <span>આજનો અભ્યાસ</span>
+            <strong id="heroDate">આજે</strong>
+          </div>
+          <div class="mini-timeline">
+            <div>
+              <span class="dot active"></span>
+              <strong>પાઠ સમજો</strong>
+              <small>વાંચન અને ઉદાહરણ સાથે</small>
+            </div>
+            <div>
+              <span class="dot"></span>
+              <strong>નોંધ બનાવો</strong>
+              <small>મુખ્ય મુદ્દા સાચવો</small>
+            </div>
+            <div>
+              <span class="dot"></span>
+              <strong>પ્રેક્ટિસ કરો</strong>
+              <small>પ્રશ્નો અને પુનરાવર્તન</small>
+            </div>
+          </div>
+          <div class="stat-grid">
+            <div><strong id="completedCount">0</strong><span>પૂર્ણ પાઠ</span></div>
+            <div><strong id="bookmarkCount">0</strong><span>સાચવેલા</span></div>
+            <div><strong id="streakText">શરૂ</strong><span>ધ્યાન</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="logos-band" aria-label="વિદ્યાર્થીઓ માટે">
+        <p>બાળકો, માતા-પિતા, શિક્ષકો અને ગામની લાઇબ્રેરી માટે બનાવેલ</p>
+        <div class="pill-row">
+          <span>સરળ ભાષા</span>
+          <span>મોબાઇલમાં ચાલે</span>
+          <span>ઓછા માર્ગદર્શનવાળા વિદ્યાર્થીઓ માટે</span>
+          <span>વિષય પ્રમાણે ગોઠવણ</span>
+        </div>
+      </section>
+
+      <section class="section intro-grid" id="learn">
+        <div class="section-copy">
+          <p class="eyebrow">તમારો અભ્યાસ માર્ગ પસંદ કરો</p>
+          <h2>ક્લાસ, વિષય અને પાઠ પસંદ કરો.</h2>
+          <p>
+            દરેક પાઠ માટે વીડિયો, નોંધ, યાદ રાખવાના મુદ્દા અને પ્રેક્ટિસ એક જ જગ્યાએ
+            મળશે. પહેલા ધોરણ પસંદ કરો, પછી વિષય.
+          </p>
+        </div>
+        <div class="selector-panel">
+          <label>
+            ધોરણ
+            <select id="standardSelect"></select>
+          </label>
+          <label>
+            વિષય
+            <select id="subjectSelect"></select>
+          </label>
+          <label>
+            શોધો
+            <input id="searchInput" type="search" placeholder="પાઠ અથવા શબ્દ શોધો" />
+          </label>
+        </div>
+      </section>
+
+      <section class="feature-shell">
+        <aside class="chapter-list" aria-label="પાઠોની યાદી">
+          <div class="chapter-list-head">
+            <span id="chapterCount">0 પાઠ</span>
+            <button id="showBookmarks" type="button">સાચવેલા</button>
+          </div>
+          <div id="chapters"></div>
+        </aside>
+
+        <article class="lesson-card" id="videos">
+          <div class="lesson-kicker" id="lessonKicker">ધોરણ 10 • ગણિત</div>
+          <h2 id="lessonTitle">પાઠ પસંદ કરો</h2>
+          <p id="lessonSummary"></p>
+
+          <div class="video-frame" id="videoFrame">
+            <div class="video-card">
+              <span>વિડિયો સહાય</span>
+              <h3 id="videoTitle">આ પાઠ માટે ચોક્કસ વિડિયો</h3>
+              <p id="videoHint">
+                આ પાઠ માટે પસંદ કરેલો વિડિયો ખૂલશે. વિડિયો ન ઉમેર્યો હોય તો YouTube પર માત્ર આ પાઠના વિડિયો પરિણામો ખૂલશે, playlist નહીં.
+              </p>
+              <a class="primary-button" id="videoOpen" href="#" target="_blank" rel="noreferrer">ચોક્કસ વિડિયો ખોલો</a>
+            </div>
+          </div>
+
+          <div class="lesson-actions">
+            <button class="primary-button" id="completeBtn" type="button">પૂર્ણ તરીકે નોંધો</button>
+            <button class="secondary-button" id="bookmarkBtn" type="button">સાચવો</button>
+            <a class="ghost-link" id="youtubeSearch" href="#" target="_blank" rel="noreferrer">YouTube પર વધુ જુઓ</a>
+          </div>
+
+          <div class="lesson-tabs" role="tablist" aria-label="પાઠની વિગત">
+            <button class="tab active" type="button" data-tab="read">વાંચી શીખો</button>
+            <button class="tab" type="button" data-tab="teach">શિક્ષક સમજાવટ</button>
+            <button class="tab" type="button" data-tab="steps">અભ્યાસ પગલાં</button>
+            <button class="tab" type="button" data-tab="notes">નોંધ</button>
+            <button class="tab" type="button" data-tab="quiz">કસોટી</button>
+          </div>
+          <div class="tab-panel" id="tabPanel"></div>
+        </article>
+      </section>
+
+      <section class="section split-section" id="plan">
+        <div>
+          <p class="eyebrow">30 દિવસનો અભ્યાસ પુલ</p>
+          <h2>રોજ 45 મિનિટનો સાચો રસ્તો.</h2>
+          <p>
+            સંપૂર્ણ માર્ગદર્શન ન હોય તો પણ વિદ્યાર્થી પોતે આગળ વધી શકે તે માટે
+            સાદો સમયપત્રક. આ પ્લાનને શિક્ષક અથવા વાલી બદલી શકે છે.
+          </p>
+        </div>
+        <div class="plan-grid">
+          <div class="plan-card">
+            <span>દિવસ 1-5</span>
+            <strong>પાઠ સમજવો</strong>
+            <p>પહેલા વાંચન પાઠ સમજો, પુસ્તકમાં મથાળાં નિશાન કરો, 5 નવા શબ્દો લખો.</p>
+          </div>
+          <div class="plan-card">
+            <span>દિવસ 6-20</span>
+            <strong>પ્રશ્નો ઉકેલવા</strong>
+            <p>દરરોજ 8 પ્રશ્નો, 1 આકૃતિ અથવા કોષ્ટક, અને ભૂલ માટે અલગ નોટબુક.</p>
+          </div>
+          <div class="plan-card">
+            <span>દિવસ 21-30</span>
+            <strong>પુનરાવર્તન</strong>
+            <p>જૂના પ્રશ્નપત્રો, સૂત્રપત્રક, અને મુશ્કેલ પાઠ ફરી જુઓ.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section support-section">
+        <div class="support-card">
+          <p class="eyebrow">શંકા સહાયક</p>
+          <h2>પ્રશ્ન અટકે ત્યારે શું કરવું?</h2>
+          <p>
+            અહીં લખો કે કયો મુદ્દો સમજાતો નથી. સાઇટ તમને આગળ પૂછવાના સારા
+            પ્રશ્નો અને અભ્યાસની રીત આપશે.
+          </p>
+          <textarea id="doubtInput" rows="4" placeholder="ઉદાહરણ: ત્રિકોણમિતિમાં સાઇન અને કોસ સમજાતું નથી"></textarea>
+          <button class="primary-button" id="doubtBtn" type="button">મદદ મેળવો</button>
+        </div>
+        <div class="answer-card" id="doubtAnswer">
+          <strong>નાનું સૂચન</strong>
+          <p>એક પાઠ પસંદ કરો, "વાંચી શીખો" ખોલો, પછી નોંધ અને કસોટી અજમાવો.</p>
+        </div>
+      </section>
+
+      <section class="section practice-section" id="practice">
+        <div>
+          <p class="eyebrow">પ્રેક્ટિસ ખંડ</p>
+          <h2>અભ્યાસ કર્યા પછી તરત તપાસો.</h2>
+        </div>
+        <div class="practice-grid">
+          <button class="practice-card" type="button" data-practice="formula">સૂત્ર યાદ</button>
+          <button class="practice-card" type="button" data-practice="oral">મૌખિક જવાબ</button>
+          <button class="practice-card" type="button" data-practice="writing">લેખન અભ્યાસ</button>
+          <button class="practice-card" type="button" data-practice="exam">પરીક્ષા ટેવ</button>
+        </div>
+        <div class="practice-output" id="practiceOutput"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <strong>ગુજરાત વિદ્યાસેતુ</strong>
+        <p>
+          પાઠની ગોઠવણ માટે ગુજરાત બોર્ડના પાઠ્યપુસ્તક આધારનો ઉપયોગ કર્યો છે. YouTube
+          વાંચન પાઠ મુખ્ય અભ્યાસ માટે છે; વિડિયો વધારાની અભ્યાસ સહાય તરીકે રાખ્યા છે.
+        </p>
+      </div>
+      <a href="#home">ઉપર જાઓ</a>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
